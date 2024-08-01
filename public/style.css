@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f0f4f8;
+}
+.About_info {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    margin-top: 10px;
+    margin-bottom: -20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#welcome-section {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#welcome-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #4a4a4a;
+}
+
+#welcome-section p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #4a4a4a;
+}
+
+#welcome-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  max-height: 500px; /* 이미지의 최대 높이를 300px로 설정 */
+}
+
+#question {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #4a4a4a;
+}
+
+#answer{
+margin-bottom: 20px;
+}
+
+textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+#char-count {
+  text-align: right;
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+textarea{
+	resize: none;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 1rem;
+}
+.delete-record{
+  margin-top: 50px;
+}
+button:hover {
+  background-color: #ff1493;
+}
+
+#logout {
+  margin-bottom: 1.5rem;
+}
+
+.character-image-container {
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#character-image img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#ai-response {
+  background-color: #f8f8f8;
+  padding: 1.5rem;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+#loading {
+  display: none; /* 초기에는 숨김 */
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: #666;
+}
+@keyframes spinner {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.spinner {
+  margin: 0 auto;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #ff69b4;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spinner 0.6s linear infinite;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  #question {
+    font-size: 1.2rem;
+  }
+
+  #welcome-section h2 {
+    font-size: 1.5rem;
+  }
+
+  #welcome-section p {
+    font-size: 1rem;
+  }
+}
+
