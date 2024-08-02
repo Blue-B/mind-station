@@ -27,7 +27,7 @@ AI의 따뜻한 공감과 긍정적인 격려를 통해 마음의 안정을 찾�
 - **🤖 AI 공감 및 위로**: AI가 당신의 감정을 분석하고 따뜻한 공감과 위로를 제공합니다.
 - **📅 기록 조회 및 삭제**: 과거의 감정 기록을 조회하고 필요시 삭제할 수 있습니다.
 - **🔒 익명성 보장**: 사용자 정보는 안전하게 보호되며 익명성이 보장됩니다.
-- **🎭Guest로그인 지원** : 이제 Guest로 로그인하여 일 2회 질문을하여 서비스를 체험해 볼 수 있습니다. 단 기록보기 기능은 지원하지 않습니다.
+- **🎭Guest로그인 지원** : 이제 Guest로 로그인하여 일 2회 답변을하여 서비스를 체험해 볼 수 있습니다. 단 기록보기 기능은 지원하지 않습니다. (로그인 회원은 일10회 답변가능)
 
 ---
 
@@ -40,6 +40,11 @@ AI의 따뜻한 공감과 긍정적인 격려를 통해 마음의 안정을 찾�
 
 ### **에러 페이지**
 ![error](https://github.com/user-attachments/assets/795921b2-286c-4cb6-a2e1-0487b7caef89)
+
+### **검색엔진 등록**
+![Daum](https://github.com/user-attachments/assets/e671e04a-2486-47d7-962e-68b5e401c6a4)
+![Naver](https://github.com/user-attachments/assets/3e786e2e-5f40-42ef-8933-6abb741a5192)
+![Google](https://github.com/user-attachments/assets/36f7ef00-40a6-43d3-a812-2f791a715f8f)
 
 
 ---
