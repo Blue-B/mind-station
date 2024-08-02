@@ -138,21 +138,24 @@ function removeUndefined(obj) {
 }
 
 
-async function saveUserResponse(userId, userResponse, aiResponse, emotion) {
+async function saveUserResponse(userId, userResponse, aiResponse, emotion, isGuest) {
   try {
-      const docRef = await db.collection('responses').add({
-          userId: userId,
-          userResponse: userResponse,
-          aiResponse: aiResponse,
-          emotion: emotion,
-          timestamp: admin.firestore.FieldValue.serverTimestamp()
-      });
+    const data = {
+      userId: userId,
+      userResponse: userResponse,
+      aiResponse: aiResponse,
+      emotion: emotion,
+      timestamp: admin.firestore.FieldValue.serverTimestamp()
+    };
+
+    const collection = isGuest ? 'guest_responses' : 'responses'; // 컬렉션 선택
+
+    await db.collection(collection).add(data);
   } catch (e) {
-      console.error("Error adding document: ", e);
-      throw e;
+    console.error("Error adding document: ", e);
+    throw e;
   }
 }
-
 async function getUserRequestCount(userId) {
   const docRef = db.collection('userLimits').doc(userId);
   const doc = await docRef.get();
@@ -209,7 +212,7 @@ app.post('/api/answers', async (req, res) => {
     await updateUserRequestCount(effectiveUserId, newCount, today);
 
     const result = await analyzeEmotionAndGenerateResponse(answer);
-    await saveUserResponse(effectiveUserId, answer, result.aiResponse, result.emotion);
+    await saveUserResponse(effectiveUserId, answer, result.aiResponse, result.emotion,isGuest);
     return res.status(200).json(result);
   } catch (error) {
     if (error.status === 503) {
