@@ -58,6 +58,13 @@ AI의 따뜻한 공감과 긍정적인 격려를 통해 마음의 안정을 찾�
 
 ---
 
+---
+## 구글 해커톤 출품
+![image](https://github.com/user-attachments/assets/eafb8b8d-caba-42ef-9fb7-b844985b0d82)
+![링크](https://ai.google.dev/competition/projects/mind-station?hl=ko)
+
+---
+
 ## 🚀 설치 및 실행
 
 ### 📋 요구 사항
